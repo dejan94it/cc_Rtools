@@ -1,6 +1,6 @@
 FROM rstudio/plumber
 
-RUN R -e "install.packages(c('remotes', 'tidyverse', 'httr'))"
+RUN R -e "install.packages(c('remotes', 'tidyverse'))"
 
 COPY / /
 
