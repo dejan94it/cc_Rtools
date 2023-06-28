@@ -25,3 +25,11 @@ and obviously run ```docker compose up``` to add the new container to the networ
 - Add a @tool in ```Rtools.py``` using ```run_Rtool(R_url, "yourscript.R")``` in it.
 
 You can see the example of ```today.R```, already present in the folder.
+
+## Plus
+- You can install all the R packages you need, just modifying the Dockerfile.
+- You can add other endpoints (and documentation) in ```plumber.R``` file.
+  
+Enjoy!
+
+Ciao Piero ❤️
