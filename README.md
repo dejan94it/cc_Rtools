@@ -17,4 +17,11 @@ Simply add to the cat's default docker-compose.yml the following code:
       - "5079:5000"
      restart: unless-stopped
 ```
+and obviously run ```docker compose up```
 
+## How to use it
+
+- Write a ```yourscript.R``` file and put it into cc_Rtools folder.
+- Add a @tool in ```Rtools.py``` using ```run_Rtool(R_url, "yourscript.R")``` in it.
+
+You can see the example of ```today.R```, already present in the folder.
