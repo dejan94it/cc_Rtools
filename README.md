@@ -1,5 +1,5 @@
 # cc_Rtools
-This plugin allows the Cheshire Cat to use tools written in R (and to run R code in general)
+This plugin allows the [Cheshire Cat](https://github.com/cheshire-cat-ai/core) to use tools written in R (and to run R code in general)
 
 ## Installation
 
@@ -32,4 +32,4 @@ You can see the example of ```today.R```, already present in the folder.
   
 Enjoy!
 
-Ciao Piero ❤️
+Ciao @piero ❤️
