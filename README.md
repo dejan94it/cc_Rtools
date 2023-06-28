@@ -1,4 +1,4 @@
-# cc_Rtools <img src="logo.png" align="right" width="190" height="190" />
+# cc_Rtools <img src="logo.png" align="right" width="220" height="220" />
 This plugin allows the [Cheshire Cat](https://github.com/cheshire-cat-ai/core) to use tools written in R (and to run R code in general)
 
 ## Installation
