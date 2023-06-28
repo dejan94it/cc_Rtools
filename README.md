@@ -1,5 +1,5 @@
 # cc_Rtools
-This plugin allow Cheshire Cat to use tools written in R (and to run R code in general)
+This plugin allows the Cheshire Cat to use tools written in R (and to run R code in general)
 
 ## Installation
 
@@ -17,7 +17,7 @@ Simply add to the cat's default docker-compose.yml the following code:
       - "5079:5000"
      restart: unless-stopped
 ```
-and obviously run ```docker compose up```
+and obviously run ```docker compose up``` to add the new container to the network.
 
 ## How to use it
 
