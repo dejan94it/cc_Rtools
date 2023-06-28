@@ -32,4 +32,4 @@ You can see the example of ```today.R```, already present in the folder.
   
 Enjoy!
 
-Ciao @piero ❤️
+Ciao Piero ❤️
