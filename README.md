@@ -25,7 +25,7 @@ You can look at the whole ```docker.compose.yaml``` as example. You can also use
 
 ## How to use it
 
-- Write a ```yourscript.R``` file and put it into cc_Rtools folder.
+- Write a ```yourscript.R``` file and put it into ```cc_Rtools``` folder.
 - Add a @tool in ```Rtools.py``` using ```run_Rtool(R_url, "yourscript.R")``` in it.
 
 You can look at the example of ```today.R``` tool, already present in the folder.
