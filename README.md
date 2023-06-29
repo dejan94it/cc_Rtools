@@ -5,7 +5,7 @@ This plugin allows the [Cheshire Cat](https://github.com/cheshire-cat-ai/core) t
 
 ## Installation
 
-- Just download the cc_Rtools folder into cheshire-cat/core/cat/plugins.
+- Just download the ```cc_Rtools``` folder into ```cheshire-cat/core/cat/plugins``` in your machine.
   
 ## Add R container to cheshire-cat
 
@@ -19,19 +19,21 @@ Simply add to the cat's default docker-compose.yml the following code:
       - "5079:5000"
      restart: unless-stopped
 ```
-and obviously run ```docker compose up``` to add the new container to the network.
+and obviously run ```docker compose up``` again, to add the new container to the network.
+
+You can look at the whole ```docker.compose.yaml``` as example. You can also use it directly, but be sure that the original one is the same for the core part.
 
 ## How to use it
 
 - Write a ```yourscript.R``` file and put it into cc_Rtools folder.
 - Add a @tool in ```Rtools.py``` using ```run_Rtool(R_url, "yourscript.R")``` in it.
 
-You can see the example of ```today.R```, already present in the folder.
+You can look at the example of ```today.R``` tool, already present in the folder.
 
 ## Plus
-- You can install all the R packages you need, just modifying the Dockerfile.
+- You can install all the R packages you need to run your custom tools, just modifying the Dockerfile.
 - You can add other endpoints (and documentation) in ```plumber.R``` file.
   
-Enjoy!
+Enjoy, and obviously, contribute! :)
 
 Ciao Piero ❤️
