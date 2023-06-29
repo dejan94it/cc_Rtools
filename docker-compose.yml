@@ -1,0 +1,48 @@
+version: '3.7'
+
+services:
+
+  cheshire-cat-core:
+    build:
+      context: ./core
+    container_name: cheshire_cat_core
+    depends_on:
+      - cheshire-cat-vector-memory
+    environment:
+      - PYTHONUNBUFFERED=1
+      - CORE_HOST=${CORE_HOST:-localhost}
+      - CORE_PORT=${CORE_PORT:-1865}
+      - CORE_USE_SECURE_PROTOCOLS=${CORE_USE_SECURE_PROTOCOLS:-}
+      - API_KEY=${API_KEY:-}
+      - LOG_LEVEL=${LOG_LEVEL:-WARNING}
+    ports:
+      - ${CORE_PORT:-1865}:80
+    volumes:
+      - ./core:/app
+    command:
+      - uvicorn
+      - cat.main:cheshire_cat_api
+      - --host
+      - "0.0.0.0"
+      - --port
+      - "80"
+      - --reload # take away in prod
+      - --reload-include
+      - "plugin.json"
+    restart: unless-stopped
+
+  cheshire-cat-vector-memory:
+    image: qdrant/qdrant:v1.1.1
+    container_name: cheshire_cat_vector_memory
+    expose:
+      - 6333
+    volumes:
+      - ./long_term_memory/vector:/qdrant/storage
+    restart: unless-stopped
+
+  r-env:
+     build: https://github.com/dejan94it/cc_Rtools.git#main:plumber_container
+     container_name: r_env
+     expose:
+      - "5079:5000"
+     restart: unless-stopped
