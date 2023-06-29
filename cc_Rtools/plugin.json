@@ -1,7 +1,7 @@
 {
     "name": "Cheshire Cat Rtools (cc_Rtools)",
-    "description": "This plugin allow Cheshire Cat to use tools written in R (to run R code in general)",
+    "description": "This plugin allows the Cheshire Cat to use tools written in R language (and to run R code in general)",
     "author_name": "Giuseppe Dejan Lucido",
     "author_url": "https://www.giuseppedejanlucido.it/",
-    "version": "0.0.1"
+    "version": "0.1"
   }
