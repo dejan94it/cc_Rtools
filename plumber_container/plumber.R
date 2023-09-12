@@ -24,14 +24,9 @@ function(msg = "") {
 #* @post /rtool
 #* @param file:file
 function(file, req){
-  
   result = req$body$file$parsed %>%
     str2expression() %>%
     eval()
   
-  return(
-    # list(result = result)
-    result
-  )
-  
+  return(result)
 }
