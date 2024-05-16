@@ -1,18 +1,12 @@
-#
-# This is a Plumber API. You can run the API by clicking
-# the 'Run API' button above.
-#
 # Find out more about building APIs with Plumber here:
-#
-#    https://www.rplumber.io/
-#
+# https://www.rplumber.io/
 
 library(plumber)
 
-#* @apiTitle Plumber Example API
+#* @apiTitle Plumber API Cheshire Cat
 #* @apiDescription Plumber example description.
 
-#* Echo back the input
+#* Echo back the input (just to try that it works)
 #* @param msg The message to echo
 #* @get /echo
 #* @serializer text
